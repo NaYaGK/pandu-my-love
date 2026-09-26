@@ -7,7 +7,7 @@ export default function MusicPlayer({ isVideoPlaying }) {
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
 
-  const audioUrl = 'https://raw.githubusercontent.com/karthikganjikindle-code/pandu-pics/main/Music/4-Love%20Me%20Again-SenSongsMp3.Co.mp3';
+  const audioUrl = 'https://raw.githubusercontent.com/karthikganjikindle-code/pandu-pics/main/Music/Adigaa.mp3';
 
   useEffect(() => {
     if (audioRef.current) {
