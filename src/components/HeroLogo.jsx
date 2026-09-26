@@ -119,7 +119,7 @@ export default function HeroLogo({ onComplete }) {
             </p>
             <p className="text-white/90 font-montserrat font-light text-sm">
               {/* PLACEHOLDER: The user will add the inside joke / secret message here later */}
-              Ammu nenu chesindi thapu aa kani nuvu anti istm leka kadhu ]
+              Ammu nenu chesindi thapu aa kani nuvu anti chala istm pichi aa
             </p>
             <button
               onClick={(e) => { e.stopPropagation(); setShowSecret(false); setClickCount(0); }}
