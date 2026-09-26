@@ -7,7 +7,7 @@ export default function MusicPlayer({ isVideoPlaying }) {
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
 
-  const audioUrl = 'https://raw.githubusercontent.com/karthikganjikindle-code/pandu-pics/main/Music/Vaalu%20Kanuladaanaa%20-%20SenSongsMp3.Co.mp3';
+  const audioUrl = 'https://raw.githubusercontent.com/karthikganjikindle-code/pandu-pics/main/Music/4-Love%20Me%20Again-SenSongsMp3.Co.mp3';
 
   useEffect(() => {
     if (audioRef.current) {
@@ -68,16 +68,16 @@ export default function MusicPlayer({ isVideoPlaying }) {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 2, duration: 1 }}
       className="fixed bottom-6 right-6 z-50"
     >
       <div className="bg-black/60 backdrop-blur-xl border border-pink-500/30 rounded-full p-2 pr-4 flex items-center gap-3 shadow-2xl shadow-pink-900/40">
-        
+
         {/* Play/Pause Button */}
-        <button 
+        <button
           onClick={togglePlay}
           className="w-10 h-10 flex items-center justify-center bg-pink-500 text-white rounded-full hover:bg-pink-400 hover:scale-105 active:scale-95 transition-all shadow-[0_0_15px_rgba(236,72,153,0.5)]"
         >
@@ -96,7 +96,7 @@ export default function MusicPlayer({ isVideoPlaying }) {
         </div>
 
         {/* Mute Button */}
-        <button 
+        <button
           onClick={toggleMute}
           className="text-white/70 hover:text-white transition-colors"
         >
